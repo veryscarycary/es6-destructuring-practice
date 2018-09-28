@@ -68,6 +68,12 @@ testies('pie', 2, 'cat', [true, false, 'read'], ['test'], [2,3,4,5]);
 //2
 //[cat,true,false,read,test,2,3,4,5]
 
+testies('pie', 2, 'cat', [true, false, 'read'], ['test'], [2,3,4,5]);
+
+//pie
+//2
+//[cat,true,false,read,test,b,2,3,4,5]
+
 
 // A variable can be assigned its value with destructuring separate from its declaration.
 // but it needs to have parenthesis to denote it as an expression. Without parenthesis or
