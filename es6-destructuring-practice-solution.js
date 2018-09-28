@@ -55,6 +55,20 @@ var [a, ...b,] = [1, 2, 3];
 // SyntaxError: rest element may not have a trailing comma
 
 
+const testies = (a, b, ...rest) => {
+  console.log(a)
+  console.log(b)
+  console.log(rest)
+  // console.log(props)
+}
+
+testies('pie', 2, 'cat', [true, false, 'read'], ['test'], [2,3,4,5]);
+
+//pie
+//2
+//[cat,true,false,read,test,2,3,4,5]
+
+
 // A variable can be assigned its value with destructuring separate from its declaration.
 // but it needs to have parenthesis to denote it as an expression. Without parenthesis or
 // a declaration, the left-hand side {} is considered a block and not an object literal.
